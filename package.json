@@ -1,0 +1,17 @@
+{
+  "name": "srs-ts",
+  "version": "0.0.1",
+  "description": "Spaced Repetition Software (SRS) functions built with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "author": "Gerry Pass",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.6"
+  }
+}
