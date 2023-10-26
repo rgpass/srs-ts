@@ -8,31 +8,15 @@
 // Level 7: 3 months
 // Level 8: 6 months
 
-export interface MoveTrainer {
-  lastCorrectAt: Date;
-  prevLevel: number;
-}
+import { LeitnerSystem, leitnerSystem } from "./leitner-system";
 
-const levelToDays: Record<number, number> = {
-  1: 4 / 24,
-  2: 1,
-  3: 3,
-  4: 7,
-  5: 14,
-  6: 30,
-  7: 90,
-  8: 180,
-};
+type MoveTrainer = Omit<LeitnerSystem, "levelDays">;
+
+const levelDays = [4 / 24, 1, 3, 7, 14, 30, 90, 180];
 
 export function nextDateViaMoveTrainer({
   lastCorrectAt,
   prevLevel,
 }: MoveTrainer): Date {
-  const nextLevel = Math.min(prevLevel + 1, 8);
-  const daysToAdd = levelToDays[nextLevel];
-
-  const dueDate = new Date(lastCorrectAt); // Copied to be immutable
-  dueDate.setTime(dueDate.getTime() + daysToAdd * 24 * 60 * 60 * 1000);
-
-  return dueDate;
+  return leitnerSystem({ lastCorrectAt, levelDays, prevLevel });
 }

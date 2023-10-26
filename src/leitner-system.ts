@@ -1,4 +1,4 @@
-interface LeitnerSystem {
+export interface LeitnerSystem {
   lastCorrectAt: Date;
   levelDays: number[];
   prevLevel: number;

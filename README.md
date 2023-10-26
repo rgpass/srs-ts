@@ -22,11 +22,6 @@ With software, we can customize the number of "boxes" (called "levels") and the 
 
 ## Chessable's MoveTrainer
 
-This is the simplest one, as it only considers two inputs:
-
-- `lastCorrectAt` -- The date and time it was last answered correctly
-- `prevLevel` -- The level the user was previously at, ranging from 0 (has never gotten it correct) to 8
-
-When a user gets a correct answer, the level increments by 1. If they get an incorrect answer, it resets completely.
+This uses the Leitner System and consists of 8 boxes.
 
 See [their documentation](https://chessable.stonly.com/kb/guide/en/how-does-the-spaced-repetition-scheduling-work-b6A4HAXont/Steps/198511) for more info.
