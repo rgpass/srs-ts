@@ -25,10 +25,10 @@ function minutesToDays(minutes: number): number {
 
 interface Modifier {
   stepsIndex?: (vals: Card) => number;
+  easeFactor?: (vals: Card) => number;
   interval?: (vals: Card) => number;
   scheduledFor?: (vals: Card) => number;
   status?: (vals: Card) => Status;
-  easeFactor?: (vals: Card) => number;
 }
 
 type AnkiModifiers = Record<Status, Record<Difficulty, Modifier>>;
