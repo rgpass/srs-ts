@@ -25,3 +25,21 @@ With software, we can customize the number of "boxes" (called "levels") and the 
 This uses the Leitner System and consists of 8 boxes. It is a great "starter kit" for SRS since it only requires two inputs: the last datetime the flashcard was answered correctly and what the previous level was.
 
 See [their documentation](https://chessable.stonly.com/kb/guide/en/how-does-the-spaced-repetition-scheduling-work-b6A4HAXont/Steps/198511) for more info.
+
+## Anki
+
+This library uses a slightly simpler version of Anki's algorithm, but it still depends on multiple parameters.
+
+- Current status (learning, learned, relearning)
+- How difficult it was to answer (again, hard, good, easy)
+- The previous interval
+- Running history of how many times you answered hard or easy
+
+If SRS is critical to your project, consider using this algorithm.
+
+# Upcoming Improvements
+
+- Publish to npm
+- Add more tests to Anki
+- Add SuperMemo's algorithm
+- Add Mnemosyne algorithm
