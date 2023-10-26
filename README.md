@@ -41,5 +41,6 @@ If SRS is critical to your project, consider using this algorithm.
 
 - Publish to npm
 - Add more tests to Anki
+- Have Anki function return a `Date`, rather than days to add
 - Add SuperMemo's algorithm
 - Add Mnemosyne algorithm
