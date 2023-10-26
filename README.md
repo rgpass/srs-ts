@@ -22,6 +22,6 @@ With software, we can customize the number of "boxes" (called "levels") and the 
 
 ## Chessable's MoveTrainer
 
-This uses the Leitner System and consists of 8 boxes.
+This uses the Leitner System and consists of 8 boxes. It is a great "starter kit" for SRS since it only requires two inputs: the last datetime the flashcard was answered correctly and what the previous level was.
 
 See [their documentation](https://chessable.stonly.com/kb/guide/en/how-does-the-spaced-repetition-scheduling-work-b6A4HAXont/Steps/198511) for more info.
